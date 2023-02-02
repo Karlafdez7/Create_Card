@@ -3,8 +3,17 @@
 @import 'core/mixins';
 @import 'core/animations';
 @import 'layout/header';
-@import 'layout/section-preview';
-@import 'layout/section-preview2';
 @import 'layout/footer';
-@import 'pages/index';
+/**@import 'pages/index';*/
 
+@import 'core/variables';
+@import 'core/reset';
+@import 'core/mixins';
+@import 'core/animations';
+@import 'layout/header';
+@import 'pages/section-preview';
+@import 'pages/section-form';
+@import 'pages/section-form-design';
+@import 'pages/section-form-fill';
+@import 'pages/section-form-share';
+@import 'layout/footer';
