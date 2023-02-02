@@ -7,13 +7,13 @@
 		color: $color__brand2;
 		font-size: 14px;
 		line-height: 20px;
-		font-family: "Open Sans", sans-serif;
+		font-family: $font__text;
 		margin-bottom: 7px;
 		}
 		&--input {
 		border: 1px solid $color__brand3;
 		height: 30px;
-		font-family: "Open Sans", sans-serif;
+		font-family: $font__text;
 		margin-bottom: 20px;
 		}
 		&--button {
