@@ -5,6 +5,7 @@ html{
 .form__design{
     display: grid;
     grid-template-columns: 2;
+    border: none;
 
     &__subtitle{
         grid-column: 1/2;
