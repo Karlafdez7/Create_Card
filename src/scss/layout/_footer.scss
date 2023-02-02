@@ -1,2 +1,27 @@
 .footer {
+    background-color: #ffffff;
+    border: solid 1px $color_dividers;
+    height: 110px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+    .footer-copy {
+        font-family: $font__text, sans-serif;
+        color: #6b6b6b;
+        line-height: 1.43;
+        font-size: 14px;
+        opacity: 0.5;
+    }
+
+
+    .footer-image {
+        width: 103px;
+        height: 40px;
+    }
+
 }
