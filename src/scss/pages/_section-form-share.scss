@@ -1,0 +1,29 @@
+html{
+    font-size: 62.5%;
+}
+
+
+.form_share__container{
+        display:flex;
+        justify-content: center;
+
+        &--btn{
+            width: 20rem;
+            height: 5rem;
+            font-family: $font__button; //ojo! no carga la fuente!!!!!!ª
+            font-size: 1.8rem;
+            border-radius:1.2rem;
+            box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+            background-color: $color__brand1;
+            color:white;
+            border: 0;
+            text-transform: uppercase;
+            margin: auto;
+    }
+}
+
+.fa-regular{
+    margin-right: 0.75rem;
+    font-size: 2.2rem;
+
+}
