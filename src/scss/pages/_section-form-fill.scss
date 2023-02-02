@@ -1,0 +1,31 @@
+.section__fill {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-bottom: 30px;
+		&--label {
+		color: #114e4e;
+		font-size: 14px;
+		line-height: 20px;
+		font-family: "Open Sans", sans-serif;
+		margin-bottom: 7px;
+		}
+		&--input {
+		border: 1px solid #a2deaf;
+		height: 30px;
+		font-family: "Open Sans", sans-serif;
+		margin-bottom: 20px;
+		}
+		&--button {
+		width: 140px;
+		height: 30px;
+		margin-bottom: 20px;
+		background-color: #e17334;
+		color: white;
+		border: none;
+		border-radius: 3px;
+		box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+		}
+}
+
+
