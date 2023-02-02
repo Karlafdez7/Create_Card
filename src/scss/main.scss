@@ -3,7 +3,13 @@
 @import 'core/mixins';
 @import 'core/animations';
 @import 'layout/header';
-@import 'layout/main-landing';
 @import 'layout/footer';
 @import 'pages/main-card';
 @import 'pages/section-form-design';
+/**@import 'pages/index';*/
+@import 'pages/section-preview';
+@import 'pages/section-form';
+@import 'pages/section-form-design';
+@import 'pages/section-form-fill';
+@import 'pages/section-form-share';
+@import 'layout/footer';

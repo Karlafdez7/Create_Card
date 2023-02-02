@@ -1,0 +1,87 @@
+.preview{
+    display: flex;
+    flex-direction: column;
+    background-color: $color__bg--dark;
+    height: 457px;
+    padding-left: 45px; /***/
+    padding-top: 38px;
+
+    &__reset{
+        background-color: $color__bg--dark;
+        height:30px;
+        width:75px;
+        font-family:$font__text;
+        font-size: 12px;
+        border: white 1px solid;
+        text-decoration: none;
+        
+       
+
+
+    }
+
+    &__card{
+        
+        background-color: $color__white-two;
+        height:329px;
+        width:240px;
+        margin-top: 20px;
+
+        &__text{
+            
+            height: 45px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            border-left: 5px solid $color__brand2;
+            background-color: rgb(255, 225, 0);
+        }
+        
+        &__name{
+
+            font-family:$font__card ;
+            font-weight: bold;
+            font-size: 18px;
+
+        }
+
+        &__job {
+            font-family:$font__card ;
+            font-size: 12px;
+
+        }
+
+        &__pic{
+            height:200px;
+            width:240px;
+
+
+        }
+
+        &__social{
+
+            background-color:pink;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 54px;
+
+            &__icons {
+                height:32px;
+                width:32px;
+                border: solid 1px ;
+                background-color: red;
+                border:$color__brand3; 
+
+
+
+            }
+
+        }
+
+    }
+
+    
+
+    
+    
+}
