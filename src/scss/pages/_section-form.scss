@@ -1,0 +1,14 @@
+.dropdown {
+    padding: 20px 30px;
+    background: linear-gradient(to bottom, $color__bg--light, $color__white-two 9%);
+}
+.dropdown__fieldset {
+    border: none;
+}
+.dropdown__title {
+    font-size: 18px;
+    color: $color__text;
+    font-family: $font__text;
+    font-weight: 600;
+    text-transform: uppercase;
+}
