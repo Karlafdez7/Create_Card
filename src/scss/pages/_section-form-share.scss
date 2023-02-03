@@ -10,7 +10,7 @@ html{
         &--btn{
             width: 20rem;
             height: 5rem;
-            font-family: $font__button; //ojo! no carga la fuente!!!!!!ª
+            font-family: $font__button; 
             font-size: 1.8rem;
             border-radius:1.2rem;
             box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
@@ -25,5 +25,5 @@ html{
 .fa-regular{
     margin-right: 0.75rem;
     font-size: 2.2rem;
-
+    color: white;
 }
