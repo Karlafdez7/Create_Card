@@ -1,10 +1,18 @@
 .main {
+    // width: 320vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     background-color: #f5f5f5;
 
+    // @media all and (min-width:768px) {
+    //     width: 768vw;
+    // }
+
+    // @media all and (min-width:1024px) {
+    //     width: 1024vw;
+    // }
 
     &--title {
         font-family: $font__heading;
