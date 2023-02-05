@@ -1,8 +1,19 @@
-.image-header {
-    background-color: $color__bg--light;
-    width: auto;
+.container-header {
     display: flex;
-    justify-content: center;
-    padding-top: 6rem;
-    padding-bottom: 3rem;
+    align-items: center;
+    justify-content:center;
+    background-color: $color__bg--light;
+
+    .image-header {
+        width: 250px;
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+
+        @media all and (min-width: 768px) {
+            width: 419px;
+            padding-top: 21rem;
+        }
+    }
 }
+
+

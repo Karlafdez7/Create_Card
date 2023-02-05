@@ -9,6 +9,14 @@
     justify-content: space-around;
     align-items: center;
 
+    @media all and (min-width: 768px) {
+        height: 6rem;
+        flex-direction: row;
+        justify-content:space-between;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
 
     .footer-copy {
         font-family: $font__text, sans-serif;
@@ -23,5 +31,5 @@
         width: 103px;
         height: 40px;
     }
-
 }
+
