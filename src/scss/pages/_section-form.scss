@@ -13,3 +13,24 @@
     text-transform: uppercase;
     margin-bottom: 25px;
 }
+
+@media  (min-width: 768px){
+
+    .ui_main{
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 1;
+    }
+
+    .preview{
+        max-width: 50vw;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .dropdown{
+        max-width:50vw;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
