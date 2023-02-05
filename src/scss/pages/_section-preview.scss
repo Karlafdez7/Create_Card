@@ -29,15 +29,17 @@
         height:329px;
         width:240px;
         margin-top: 20px;
+        padding-top: 20px;
+        
 
         &__text{
             
             height: 45px;
-            margin-top:20px;
             margin-bottom: 10px;
             border-left: 5px solid $color__brand2;
             background-color: rgb(255, 225, 0);
             padding-left: 15px;
+            font-family:$font__card;
         }
         
         &__name{
@@ -45,6 +47,8 @@
             font-family:$font__card ;
             font-weight: bold;
             font-size: 18px;
+            color: $color__brand2;
+            font-weight: bold;
 
         }
 
@@ -53,6 +57,7 @@
             padding-top: 4px;
             font-family:$font__card ;
             font-size: 16px;
+            color: $color__text;
 
         }
 
@@ -68,11 +73,15 @@
             background-color: $color__white-two;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: center;
+            gap: 10px;
+            margin-left: 20px;
             height: 54px;
             list-style:none;
 
             &__icons {
+                
+                
                 height:32px;
                 width:32px;
                 color: $color__brand2;
