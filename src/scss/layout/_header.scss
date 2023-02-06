@@ -1,16 +1,25 @@
 .container-header {
     background-color: $color__bg--light;
-    width: 100vw;
     display: flex;
     justify-content: center;
-    padding-top: 6rem;
+    padding-top: 10rem;
     padding-bottom: 3rem;
+    
+    .header-image {
+    width: 250px;
+    height: 63px;         
+    }
 
-    &_image {
-        width: 80%;
-        margin-top: 4.5rem;
-               
+    @media all and (min-width: 768px) {
+        .header-image {
+            width: 419px;
+            height: 105px;
+        }
     }
 }
 
-
+@media all and (min-width: 768px) {
+    .container-header {
+        padding-top: 22rem;
+    }
+}
