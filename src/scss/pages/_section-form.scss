@@ -28,20 +28,24 @@
 
 @media  (min-width: 768px){
 
+    .dropdown {
+         background: none;
+    }
     .ui_main{
         display: grid;
+        padding:2rem;
         grid-template-columns: 2;
         grid-template-rows: 1;
+        background: linear-gradient(to bottom, $color__bg--light, $color__white-two 9%);
     }
 
     .preview{
-        width: 50vw;
         grid-column: 2/3;
         grid-row: 1/2;
     }
 
     .dropdown{
-        width: 50vw;
+
         grid-column: 1/2;
         grid-row: 1/2;
     }
