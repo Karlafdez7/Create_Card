@@ -1,8 +1,17 @@
 .image-header {
     background-color: $color__bg--light;
-    width: auto;
+    width: 100vw;
     display: flex;
     justify-content: center;
     padding-top: 6rem;
     padding-bottom: 3rem;
+
+    &_img {
+        width: 80%;
+        margin-top: 4.5rem;
+               
+    }
 }
+
+
+
