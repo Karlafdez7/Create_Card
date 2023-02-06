@@ -4,9 +4,11 @@
     &__header {
         display: flex;
         align-items: baseline;
+        padding-top: 10px;
     }
     &__fieldset {
         border: none;
+        border-bottom: 1px solid $color__footer__bg;
     } 
     &__title {
         font-size: 18px;
