@@ -6,17 +6,17 @@
         display: flex;
         align-items: baseline;
         padding-top: 10px;
-        width: 320px;
+        width: 280px;
         position: relative;
         
     }
     &__fieldset {
         border: none;
         border-bottom: 1px solid $color__footer__bg;
-        width: 320px;
+        width: 280px;
     } 
     &__title {
-        font-size: 18px;
+        font-size: 1.8rem;
         color: $color__text;
         font-family: $font__text;
         font-weight: 600;
