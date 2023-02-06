@@ -18,7 +18,7 @@
     }
 
 
-    .footer-copy {
+    &__copy {
         font-family: $font__text, sans-serif;
         color: #6b6b6b;
         line-height: 1.43;
@@ -27,7 +27,7 @@
     }
 
 
-    .footer-image {
+    &__image {
         width: 103px;
         height: 40px;
     }

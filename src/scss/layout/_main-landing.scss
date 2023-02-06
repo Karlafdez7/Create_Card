@@ -52,6 +52,8 @@
 
         @media all and (min-width:768px) {
             margin: 0 22.5rem 18rem 22.5rem;
+            align-self: center;
+            width: 325px;
         }
 
         @media all and (min-width:1024px) {
@@ -74,6 +76,8 @@
 
         @media all and (min-width:768px) {
             margin: 0 32rem 5rem 32rem;
+            width: 150px;
+            align-self: center;
         }
         @media all and (min-width:1024px) {
             margin: 0 42rem 7rem 42rem;
