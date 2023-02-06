@@ -1,4 +1,4 @@
-.image-header {
+.container-header {
     background-color: $color__bg--light;
     width: 100vw;
     display: flex;
@@ -6,12 +6,11 @@
     padding-top: 6rem;
     padding-bottom: 3rem;
 
-    &_img {
+    &_image {
         width: 80%;
         margin-top: 4.5rem;
                
     }
 }
-
 
 
