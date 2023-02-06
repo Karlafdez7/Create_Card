@@ -2,11 +2,10 @@
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	padding-bottom: 30px;
 	border: none;
 		&--label {
 		color: $color__brand2;
-		font-size: 14px;
+		font-size: 1.4rem;
 		line-height: 20px;
 		font-family: $font__text;
 		margin-bottom: 7px;
@@ -26,7 +25,7 @@
 		height: 30px;
 		margin-bottom: 20px;
 		font-family: $font__text;
-		font-size: 14px;
+		font-size: 1.4rem;
 		background-color: $color__brand1;
 		color: $color__white-two;
 		border: none;
@@ -44,4 +43,7 @@
 		}
 }
 
-
+::placeholder {
+	color: #c5c5c5;
+	font-size: 1.4rem;
+}

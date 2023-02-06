@@ -1,19 +1,25 @@
 .container-header {
-    display: flex;
-    align-items: center;
-    justify-content:center;
     background-color: $color__bg--light;
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+    
+    &__image {
+    width: 250px;
+    height: 63px;         
+    }
 
-    .image-header {
-        width: 250px;
-        padding-top: 6rem;
-        padding-bottom: 3rem;
-
-        @media all and (min-width: 768px) {
+    @media all and (min-width: 768px) {
+        &__image {
             width: 419px;
-            padding-top: 21rem;
+            height: 105px;
         }
     }
 }
 
-
+@media all and (min-width: 768px) {
+    .container-header {
+        padding-top: 22rem;
+    }
+}
