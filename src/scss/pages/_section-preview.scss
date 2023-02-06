@@ -1,10 +1,20 @@
 .preview{
-   
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: $color__bg--dark;
     height: 457px;
-    padding-left: 45px; /***/
-    padding-top: 38px;
 
+    &__container{
+
+        justify-content: flex-start;
+
+
+    }
+   
+s
     &__reset{
         display: flex;
         flex-direction: inline-block;
@@ -52,10 +62,10 @@
         &__name{
 
             font-family:$font__card ;
-            font-weight: 600px;
+            font-weight: 600;
             font-size: 18px;
             color: $color__brand2;
-            font-weight: bold;
+            
 
         }
 
