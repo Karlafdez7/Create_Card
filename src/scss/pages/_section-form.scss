@@ -1,14 +1,19 @@
 .dropdown {
     padding: 20px 30px;
     background: linear-gradient(to bottom, $color__bg--light, $color__white-two 9%);
+    width: 100%;
     &__header {
         display: flex;
         align-items: baseline;
         padding-top: 10px;
+        width: 320px;
+        position: relative;
+        
     }
     &__fieldset {
         border: none;
         border-bottom: 1px solid $color__footer__bg;
+        width: 320px;
     } 
     &__title {
         font-size: 18px;
@@ -24,7 +29,6 @@
         display: inline-block;
         position: absolute;
         right: 0;
-        margin-right: 20px;
     }
 }
 
