@@ -1,17 +1,17 @@
 .footer {
     background-color: #ffffff;
     border: solid 1px $color__dividers;
-    height: 110px;
     padding-bottom: 1rem;
     padding-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 20%;
+    height: 15%;
 
-    @media all and (min-width: 768px) {
-        height: 6rem;
+    
+    @media all and (min-width: $breakpoint-tablet) {
+        height: 5%;
         flex-direction: row;
         justify-content:space-between;
         padding-left: 2.5rem;
