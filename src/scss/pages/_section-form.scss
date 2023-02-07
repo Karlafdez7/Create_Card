@@ -31,6 +31,10 @@
         right: 0;
     }
 }
+.dropdown__icon {
+    font-size: 2rem;
+    color: $color__brand1;
+}
 
 @media  (min-width: 768px){
 
@@ -54,5 +58,11 @@
 
         grid-column: 1/2;
         grid-row: 1/2;
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .dropdown {
+        max-width: 329px;
     }
 }
