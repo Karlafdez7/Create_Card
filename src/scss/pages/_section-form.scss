@@ -38,13 +38,11 @@
 
 @media  (min-width: 768px){
 
-    .dropdown {
-         background: none;
-    }
+    
     .ui_main{
         display: grid;
         padding:2rem;
-        grid-template-columns: 2;
+        grid-template-columns: 330px 1fr;
         grid-template-rows: 1;
         background: linear-gradient(to bottom, $color__bg--light, $color__white-two 9%);
     }
@@ -53,16 +51,18 @@
         grid-column: 2/3;
         grid-row: 1/2;
     }
-
-    .dropdown{
-
+    .dropdown {
+        background: none;
         grid-column: 1/2;
         grid-row: 1/2;
+      
     }
-}
 
-@media (min-width: $breakpoint-desktop) {
-    .dropdown {
-        max-width: 329px;
-    }
-}
+  @media (min-width: $breakpoint-desktop) {
+      .dropdown {
+          grid-column: 1/2;
+          grid-row: 1/2;
+      }
+
+  }
+  }
