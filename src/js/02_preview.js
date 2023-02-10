@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 /* eslint-disable no-undef */
 /* eslint-disable strict */
 
@@ -46,6 +47,64 @@ function handleInputGithub (event) {
         previewGithub.href = `${githubWritten}`;
     }
 }
+
+inputEmail.addEventListener('change', function (event) {
+  // Cada vez que el usuario escribe algo, verificamos si
+  // los campos del formulario son válidos.
+
+  if (inputEmail.validity.valid) {
+    // En caso de que haya un mensaje de error visible, si el campo
+    // es válido, eliminamos el mensaje de error.
+    emailError.innerHTML = ''; // Restablece el contenido del mensaje
+    emailError.className = 'error'; // Restablece el estado visual del mensaje
+  } else {
+    // Si todavía hay un error, muestra el error exacto
+    showError(); 
+  }
+});
+
+function showError() {
+  if(email.validity.valueMissing) {
+    // Si el campo está vacío
+    // muestra el mensaje de error siguiente.
+    emailError.textContent = 'Debe introducir una dirección de correo electrónico.';
+  } else if(email.validity.typeMismatch) {
+    // Si el campo no contiene una dirección de correo electrónico
+    // muestra el mensaje de error siguiente.
+    emailError.textContent = 'El valor introducido debe ser una dirección de correo electrónico.';
+  } else {
+    emailError.innerHTML = '';
+  }
+}
+
+inputName.addEventListener('change', function (event) {
+  if (inputName.value === "") {
+    nameError.innerHTML = 'Rellena tus datos'; 
+    nameError.className = 'error'; 
+  }
+});
+
+inputJob.addEventListener('change', function (event) {
+  if (inputJob.value === "") {
+    jobError.innerHTML = 'Rellena tus datos'; 
+    jobError.className = 'error'; 
+  }
+});
+
+inputLinkedin.addEventListener('change', function (event) {
+  if (inputLinkedin.value === "") {
+    linkedinError.innerHTML = 'Rellena tus datos'; 
+    linkedinError.className = 'error'; 
+  }
+});
+
+inputGithub.addEventListener('change', function (event) {
+  if (inputGithub.value === "") {
+    githubError.innerHTML = 'Rellena tus datos'; 
+    githubError.className = 'error'; 
+  }
+});
+
 
 function handlePalette1 () {
     if( btnPalette1.checked) {

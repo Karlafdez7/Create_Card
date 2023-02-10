@@ -23,6 +23,11 @@ const inputLinkedin = document.querySelector ('.js-linkedin');
 const previewLinkedin = document.querySelector ('.js__preview_linkedin');
 const inputGithub = document.querySelector ('.js-github');
 const previewGithub = document.querySelector ('.js__preview_github');
+const emailError = document.querySelector('.js-email + span.error');
+const nameError = document.querySelector('.js-error-name');
+const jobError = document.querySelector('.js-error-job');
+const linkedinError = document.querySelector('.js-error-linkedin');
+const githubError = document.querySelector('.js-error-github');
 
 const btnPalette1 = document.querySelector ('.js-btn-pallete1');
 const btnPalette2 = document.querySelector ('.js-btn-pallete2');
