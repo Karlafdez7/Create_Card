@@ -116,30 +116,47 @@
 
 /* Palettes*/
 
-.preview.palette2{
-    &__card__text{
-        border-left: 5px solid $--rusty-red; /* 2 */
+.palette1 {
+    .preview__card__text {
+        border-left: 5px solid $color__brand2;
+        /* 2 */
     }
-    &__name{
-        color: $--dried-blood;/* 1 */
+
+    .preview__card__name {
+        color: $color__brand2;
+        /* 1 */
     }
-    &__social__icons {
-            color: $--dried-blood; /* 1 */
-            border: $--tomato solid 2px; /* 3 */
-        }
+
+    .preview__card__social__icons {
+        color: $color__brand2;
+        border: $color__brand3 solid 2px;
+    }
 }
 
-.preview.palette3{
-    &__card__text{
+.palette2{
+    .preview__card__text{
+        border-left: 5px solid $--rusty-red; /* 2 */
+    }
+    .preview__card__name{
+        color: $--dried-blood;/* 1 */
+    }
+    .preview__card__social__icons {
+            color: $--dried-blood; /* 1 */
+            border: $--tomato solid 2px; /* 3 */
+    }
+}
+
+.palette3{
+    .preview__card__text{
         border-left: 5px solid $--faded-orange; /* 2 */
     }
-    &__name{
+        .preview__card__name{
         color: $--slate;/* 1 */
     }
-    &__social__icons {
+    .preview__card__social__icons {
             color: $--slate; /* 1 */
             border: $--light-grey-blue solid 2px; /* 3 */
-        }
+    }
 }
 
 

@@ -47,6 +47,32 @@ function handleInputGithub (event) {
     }
 }
 
+function handlePalette1 () {
+    if( btnPalette1.checked) {
+        previewPalette.classList.remove('palette2');
+        previewPalette.classList.remove('palette3');
+        previewPalette.classList.add('palette1');
+    } 
+}
+
+function handlePalette2 () {
+    if( btnPalette2.checked) {
+        previewPalette.classList.remove('palette1');
+        previewPalette.classList.remove('palette3');
+        previewPalette.classList.add('palette2');
+    } 
+}
+
+function handlePalette3 () {
+    if( btnPalette3.checked) {
+        previewPalette.classList.remove('palette1');
+        previewPalette.classList.remove('palette2');
+        previewPalette.classList.add('palette3');
+    }
+}
+
+
+
 
 inputName.addEventListener('input', handleInputName);
 inputJob.addEventListener('input', handleInputJob);
@@ -54,3 +80,8 @@ inputEmail.addEventListener('input', handleInputEmail);
 inputTel.addEventListener('input', handleInputTel);
 inputLinkedin.addEventListener('input', handleInputLinkedin);
 inputGithub.addEventListener('input', handleInputGithub);
+
+btnPalette1.addEventListener('click', handlePalette1); 
+btnPalette2.addEventListener('click', handlePalette2);
+btnPalette3.addEventListener('click', handlePalette3);
+

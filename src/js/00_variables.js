@@ -23,3 +23,8 @@ const inputLinkedin = document.querySelector ('.js-linkedin');
 const previewLinkedin = document.querySelector ('.js__preview_linkedin');
 const inputGithub = document.querySelector ('.js-github');
 const previewGithub = document.querySelector ('.js__preview_github');
+
+const btnPalette1 = document.querySelector ('.js-btn-pallete1');
+const btnPalette2 = document.querySelector ('.js-btn-pallete2');
+const btnPalette3 = document.querySelector ('.js-btn-pallete3');
+const previewPalette = document.querySelector ('.js-preview');
