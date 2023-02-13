@@ -33,3 +33,8 @@ const btnPalette1 = document.querySelector ('.js-btn-pallete1');
 const btnPalette2 = document.querySelector ('.js-btn-pallete2');
 const btnPalette3 = document.querySelector ('.js-btn-pallete3');
 const previewPalette = document.querySelector ('.js-preview');
+
+
+const btnReset=document.querySelector('.js-btn__reset'); 
+
+const allInput=document.querySelectorAll('input'); 

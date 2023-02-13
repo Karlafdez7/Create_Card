@@ -1,14 +1,11 @@
 .preview{
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: $color__bg--dark;
     height: 457px;
-
-
-
+    
     &__container{
 
         justify-content: flex-start;
@@ -16,7 +13,6 @@
 
     }
    
-
     &__reset{
         
         display: flex;
@@ -33,25 +29,22 @@
         text-decoration: none;
         color: $color__text;
         align-items: center;
+        cursor: pointer;
 
         &__text {
             font-size: 12px;
             color: $color__text;
 
         }
-
-
     }
 
     &__card{
-        
         background-color: $color__white-two;
         height:329px;
         width:240px;
         margin-top: 20px;
         padding-top: 20px;
         
-
         &__text{
             
             height: 45px;
@@ -62,33 +55,26 @@
         }
         
         &__name{
-
             font-family:$font__card ;
             font-weight: 600;
             font-size: 18px;
-            color: $color__brand2;
-            
-
+            color: $color__brand2;  
         }
 
         &__job {
-
             padding-top: 4px;
             font-family:$font__card ;
             font-size: 16px;
             color: $color__text;
-
         }
 
         &__pic{
             height:200px;
             width:240px;
             contain: content;
-
         }
 
         &__social{
-
             background-color: $color__white-two;
             display: flex;
             flex-direction: row;
@@ -98,7 +84,6 @@
             list-style:none;       
 
             &__icons {
-                
                 display:flex;
                 flex-direction: row;
                 justify-content: center;
@@ -114,6 +99,16 @@
         }
     }   
 }
+
+
+@media all and (min-width: $breakpoint-tablet) {
+    .preview{
+        height: 100%;
+        border-radius: 6px;
+    }
+
+}
+
 
 /* Palettes*/
 
@@ -159,13 +154,4 @@
             border: $--light-grey-blue solid 2px; /* 3 */
     }
 }
-
-
-@media all and (min-width: $breakpoint-tablet) {
-    .preview{
-        height: 100%;
-        border-radius: 6px;
-    }
-}
-
 
