@@ -26,6 +26,7 @@ const previewGithub = document.querySelector ('.js__preview_github');
 const emailError = document.querySelector('.js-email + span.error');
 const nameError = document.querySelector('.js-error-name');
 const jobError = document.querySelector('.js-error-job');
+const telError = document.querySelector('.js-error-tel');
 const linkedinError = document.querySelector('.js-error-linkedin');
 const githubError = document.querySelector('.js-error-github');
 
@@ -37,4 +38,10 @@ const previewPalette = document.querySelector ('.js-preview');
 
 const btnReset=document.querySelector('.js-btn__reset'); 
 
-const allInput=document.querySelectorAll('input'); 
+// EXPRESIONES REGULARES 
+
+const exp = {
+	name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+	tel: /^\d{7,14}$/ // 7 a 14 numeros.
+}

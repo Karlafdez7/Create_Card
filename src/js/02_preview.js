@@ -48,6 +48,37 @@ function handleInputGithub (event) {
     }
 }
 
+
+
+// FUNCIONES -PALETTES
+
+function handlePalette1 () {
+  if( btnPalette1.checked) {
+      previewPalette.classList.remove('palette2');
+      previewPalette.classList.remove('palette3');
+      previewPalette.classList.add('palette1');
+  } 
+}
+
+function handlePalette2 () {
+  if( btnPalette2.checked) {
+      previewPalette.classList.remove('palette1');
+      previewPalette.classList.remove('palette3');
+      previewPalette.classList.add('palette2');
+  } 
+}
+
+function handlePalette3 () {
+  if( btnPalette3.checked) {
+      previewPalette.classList.remove('palette1');
+      previewPalette.classList.remove('palette2');
+      previewPalette.classList.add('palette3');
+  }
+}
+
+
+// E
+
 inputEmail.addEventListener('change', function (event) {
   // Cada vez que el usuario escribe algo, verificamos si
   // los campos del formulario son válidos.
@@ -106,32 +137,8 @@ inputGithub.addEventListener('change', function (event) {
 });
 
 
-function handlePalette1 () {
-    if( btnPalette1.checked) {
-        previewPalette.classList.remove('palette2');
-        previewPalette.classList.remove('palette3');
-        previewPalette.classList.add('palette1');
-    } 
-}
 
-function handlePalette2 () {
-    if( btnPalette2.checked) {
-        previewPalette.classList.remove('palette1');
-        previewPalette.classList.remove('palette3');
-        previewPalette.classList.add('palette2');
-    } 
-}
-
-function handlePalette3 () {
-    if( btnPalette3.checked) {
-        previewPalette.classList.remove('palette1');
-        previewPalette.classList.remove('palette2');
-        previewPalette.classList.add('palette3');
-    }
-}
-
-
-
+// EVENTOS
 
 inputName.addEventListener('input', handleInputName);
 inputJob.addEventListener('input', handleInputJob);
