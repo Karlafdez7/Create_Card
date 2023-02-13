@@ -1,4 +1,4 @@
-.footer {
+.footer-ui {
     background-color: #ffffff;
     border: solid 1px $color__dividers;
     padding-bottom: 1rem;
@@ -7,16 +7,17 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 15vh;
-
-
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
     
     @media all and (min-width: $breakpoint-tablet) {
-        height: 5vh;
         flex-direction: row;
         justify-content:space-between;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
+        position: static;
+        bottom: auto;
     }
 
 
