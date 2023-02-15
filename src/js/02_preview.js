@@ -20,92 +20,99 @@ let telWritten = '';
 let linkedinWritten = '';
 let githubWritten = ''; */
 
-function handleInputName (event) {
-    data.name = inputName.value;
-    updatePreview();
+function handleInputName () {
+  data.name = inputName.value;
+  updatePreview();
 }
 
-function handleInputJob (event) {
-    data.job = inputJob.value;
-    updatePreview();
+function handleInputJob () {
+  data.job = inputJob.value;
+  updatePreview();
 }
 
-function handleInputEmail (event) {
-    data.email = inputEmail.value;
-    updatePreview();
+function handleInputEmail () {
+  data.email = inputEmail.value;
+  updatePreview();
 }
 
-function handleInputTel (event) {
-    data.phone = inputTel.value;
-    updatePreview();
+function handleInputTel () {
+  data.phone = inputTel.value;
+  updatePreview();
 }
 
-function handleInputLinkedin (event) {
-    data.linkedin = inputLinkedin.value;
-    updatePreview();
+function handleInputLinkedin () {
+  data.linkedin = inputLinkedin.value;
+  updatePreview();
 }
 
-function handleInputGithub (event) {
-    data.github = inputGithub.value;
-    updatePreview();
+function handleInputGithub () {
+  data.github = inputGithub.value;
+  updatePreview();
 }
 
 function updatePreview() {
   if (data.name === '') {
-        previewName.innerHTML = 'Nombre Apellidos';
-    } else {
-        previewName.innerHTML = data.name;
-    }
-    previewEmail.href = `mailto:${data.email}`;
-    if (data.job === '') {
-        previewJob.innerHTML = 'Front-end developer';
-    } else {
-        previewJob.innerHTML = data.job;
-    }
-    previewTel.href = `tel:+34${data.phone}`;
-    if (!data.linkedin.includes ('https://www.')) {
-        previewLinkedin.href = `https://www.${data.linkedin}`;
-    } else {
-        previewLinkedin.href = `${data.linkedin}`;
-    }
-    if (!data.github.includes ('https://github.com/')) {
-        previewGithub.href = `https://github.com/${data.github}`;
-    } else {
-        previewGithub.href = `${data.github}`;
-    }
+    previewName.innerHTML = 'Nombre Apellidos';
+  } else {
+    previewName.innerHTML = data.name;
+  }
+  previewEmail.href = `mailto:${data.email}`;
+  if (data.job === '') {
+    previewJob.innerHTML = 'Front-end developer';
+  } else {
+    previewJob.innerHTML = data.job;
+  }
+  previewTel.href = `tel:+34${data.phone}`;
+  if (!data.linkedin.includes ('https://www.')) {
+    previewLinkedin.href = `https://www.${data.linkedin}`;
+  } else {
+    previewLinkedin.href = `${data.linkedin}`;
+  }
+  if (!data.github.includes ('https://github.com/')) {
+    previewGithub.href = `https://github.com/${data.github}`;
+  } else {
+    previewGithub.href = `${data.github}`;
+  }
 }
 
 
 // FUNCIONES -PALETTES
 
 function handlePalette1() {
-      data.palette = 1;
-      previewPalette.classList.remove('palette2');
-      previewPalette.classList.remove('palette3');
-      previewPalette.classList.add('palette1');
+  data.palette = 1;
+  previewPalette.classList.remove('palette2');
+  previewPalette.classList.remove('palette3');
+  previewPalette.classList.add('palette1');
 }
 
 function handlePalette2() {
-      data.palette = 2;
-      previewPalette.classList.remove('palette1');
-      previewPalette.classList.remove('palette3');
-      previewPalette.classList.add('palette2');
+  data.palette = 2;
+  previewPalette.classList.remove('palette1');
+  previewPalette.classList.remove('palette3');
+  previewPalette.classList.add('palette2');
 }
 
 function handlePalette3() {
-      data.palette = 3;
-      previewPalette.classList.remove('palette1');
-      previewPalette.classList.remove('palette2');
-      previewPalette.classList.add('palette3');
+  data.palette = 3;
+  previewPalette.classList.remove('palette1');
+  previewPalette.classList.remove('palette2');
+  previewPalette.classList.add('palette3');
 }
 
 function handlePalettes(event) {
-  console.log(event.currentTarget);
-  console.log(event.target);
+  if(event.target.id === 'palette1') {
+    handlePalette1();
+  }
+  if(event.target.id === 'palette2') {
+    handlePalette2();
+  }
+  if(event.target.id === 'palette3') {
+    handlePalette3();
+  }
 }
 
 
-inputEmail.addEventListener('change', function (event) {
+inputEmail.addEventListener('change', function () {
   // Cada vez que el usuario escribe algo, verificamos si
   // los campos del formulario son válidos.
 
@@ -134,28 +141,28 @@ function showError() {
   }
 }
 
-inputName.addEventListener('change', function (event) {
+inputName.addEventListener('change', function () {
   if (inputName.value === "") {
     nameError.innerHTML = 'Rellena tus datos'; 
     nameError.className = 'error'; 
   }
 });
 
-inputJob.addEventListener('change', function (event) {
+inputJob.addEventListener('change', function () {
   if (inputJob.value === "") {
     jobError.innerHTML = 'Rellena tus datos'; 
     jobError.className = 'error'; 
   }
 });
 
-inputLinkedin.addEventListener('change', function (event) {
+inputLinkedin.addEventListener('change', function () {
   if (inputLinkedin.value === "") {
     linkedinError.innerHTML = 'Rellena tus datos'; 
     linkedinError.className = 'error'; 
   }
 });
 
-inputGithub.addEventListener('change', function (event) {
+inputGithub.addEventListener('change', function () {
   if (inputGithub.value === "") {
     githubError.innerHTML = 'Rellena tus datos'; 
     githubError.className = 'error'; 
@@ -173,7 +180,7 @@ inputTel.addEventListener('input', handleInputTel);
 inputLinkedin.addEventListener('input', handleInputLinkedin);
 inputGithub.addEventListener('input', handleInputGithub);
 
-btnPalette1.addEventListener('click', handlePalette1); 
+/* btnPalette1.addEventListener('click', handlePalette1); 
 btnPalette2.addEventListener('click', handlePalette2);
-btnPalette3.addEventListener('click', handlePalette3);
+btnPalette3.addEventListener('click', handlePalette3); */
 btnPalettes.addEventListener('click', handlePalettes);
