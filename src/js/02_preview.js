@@ -2,82 +2,108 @@
 /* eslint-disable no-undef */
 /* eslint-disable strict */
 
+const data = {
+  palette: 1,
+  name: "",
+  job: "",
+  phone: "",
+  email: "",
+  linkedin: "",
+  github: "",
+  photo: "",
+};
+
+/* let nameWritten = '';
+let emailWritten = '';
+let jobWritten = '';
+let telWritten = '';
+let linkedinWritten = '';
+let githubWritten = ''; */
+
 function handleInputName (event) {
-    const nameWritten = inputName.value;
-    if (nameWritten === '') {
-        previewName.innerHTML = 'Nombre Apellidos';
-    } else {
-        previewName.innerHTML = nameWritten;
-    }
+    data.name = inputName.value;
+    updatePreview();
 }
 
 function handleInputJob (event) {
-    const jobWritten = inputJob.value;
-    if (jobWritten === '') {
-        previewJob.innerHTML = 'Front-end developer';
-    } else {
-        previewJob.innerHTML = jobWritten;
-    }
+    data.job = inputJob.value;
+    updatePreview();
 }
 
 function handleInputEmail (event) {
-    const emailWritten = inputEmail.value;
-    previewEmail.href = `mailto:${emailWritten}`;
+    data.email = inputEmail.value;
+    updatePreview();
 }
 
 function handleInputTel (event) {
-    const telWritten = inputTel.value;
-    previewTel.href = `tel:+34${telWritten}`;
+    data.phone = inputTel.value;
+    updatePreview();
 }
 
 function handleInputLinkedin (event) {
-    const linkedinWritten = inputLinkedin.value;
-    if (!linkedinWritten.includes ('https://www.')) {
-        previewLinkedin.href = `https://www.${linkedinWritten}`;
-    } else {
-        previewLinkedin.href = `${linkedinWritten}`;
-    }
+    data.linkedin = inputLinkedin.value;
+    updatePreview();
 }
 
 function handleInputGithub (event) {
-    const githubWritten = inputGithub.value;
-    if (!githubWritten.includes ('https://github.com/')) {
-        previewGithub.href = `https://github.com/${githubWritten}`;
-    } else {
-        previewGithub.href = `${githubWritten}`;
-    }
+    data.github = inputGithub.value;
+    updatePreview();
 }
 
+function updatePreview() {
+  if (data.name === '') {
+        previewName.innerHTML = 'Nombre Apellidos';
+    } else {
+        previewName.innerHTML = data.name;
+    }
+    previewEmail.href = `mailto:${data.email}`;
+    if (data.job === '') {
+        previewJob.innerHTML = 'Front-end developer';
+    } else {
+        previewJob.innerHTML = data.job;
+    }
+    previewTel.href = `tel:+34${data.phone}`;
+    if (!data.linkedin.includes ('https://www.')) {
+        previewLinkedin.href = `https://www.${data.linkedin}`;
+    } else {
+        previewLinkedin.href = `${data.linkedin}`;
+    }
+    if (!data.github.includes ('https://github.com/')) {
+        previewGithub.href = `https://github.com/${data.github}`;
+    } else {
+        previewGithub.href = `${data.github}`;
+    }
+}
 
 
 // FUNCIONES -PALETTES
 
-function handlePalette1 () {
-  if( btnPalette1.checked) {
+function handlePalette1() {
+      data.palette = 1;
       previewPalette.classList.remove('palette2');
       previewPalette.classList.remove('palette3');
       previewPalette.classList.add('palette1');
-  } 
 }
 
-function handlePalette2 () {
-  if( btnPalette2.checked) {
+function handlePalette2() {
+      data.palette = 2;
       previewPalette.classList.remove('palette1');
       previewPalette.classList.remove('palette3');
       previewPalette.classList.add('palette2');
-  } 
 }
 
-function handlePalette3 () {
-  if( btnPalette3.checked) {
+function handlePalette3() {
+      data.palette = 3;
       previewPalette.classList.remove('palette1');
       previewPalette.classList.remove('palette2');
       previewPalette.classList.add('palette3');
-  }
 }
 
+function handlePalettes(event) {
+  console.log(event.currentTarget);
+  console.log(event.target);
+}
 
-// E
 
 inputEmail.addEventListener('change', function (event) {
   // Cada vez que el usuario escribe algo, verificamos si
@@ -150,4 +176,4 @@ inputGithub.addEventListener('input', handleInputGithub);
 btnPalette1.addEventListener('click', handlePalette1); 
 btnPalette2.addEventListener('click', handlePalette2);
 btnPalette3.addEventListener('click', handlePalette3);
-
+btnPalettes.addEventListener('click', handlePalettes);

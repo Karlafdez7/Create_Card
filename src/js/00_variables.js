@@ -33,6 +33,7 @@ const githubError = document.querySelector('.js-error-github');
 const btnPalette1 = document.querySelector ('.js-btn-pallete1');
 const btnPalette2 = document.querySelector ('.js-btn-pallete2');
 const btnPalette3 = document.querySelector ('.js-btn-pallete3');
+const btnPalettes = document.querySelector('.js-btn-palletes');
 const previewPalette = document.querySelector ('.js-preview');
 
 
