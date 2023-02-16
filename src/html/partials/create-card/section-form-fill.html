@@ -8,7 +8,7 @@
 		type="text"
 		required
 	/>
-	<span class="js-error-name" aria-live="polite"></span>
+	<span class="js-error-name error-span" aria-live="polite"></span>
 	<label class="section__fill--label" for="job">Puesto</label>
 	<input
 		class="section__fill--input js-job js-input"
@@ -21,8 +21,14 @@
 	<span class="js-error-job" aria-live="polite"></span>
 	<label class="section__fill--label" for="image">Imagen de perfil</label>
 	<div class="section__fill--img">
-		<label class="section__fill--button" for="button">Añadir imagen</label>
-		<div class="section__fill--square"></div>
+		<label class="section__fill--button" for="photo">Añadir imagen</label>
+		<input
+			class="form__photoinput js__profile-upload-btn"
+			type="file"
+			name="photo"
+			id="photo"
+		/>
+		<span class="section__fill--square js__profile-preview"></span>
 	</div>
 	<label class="section__fill--label" for="email">Email</label>
 	<input
@@ -34,7 +40,7 @@
 		pattern="/^.+@.+$/"
 		required
 	/>
-	<span class="error" aria-live="polite"></span>
+	<span class="error error-span" aria-live="polite"></span>
 	<label class="section__fill--label" for="phone">Teléfono</label>
 	<input
 		class="section__fill--input js-tel js-input"

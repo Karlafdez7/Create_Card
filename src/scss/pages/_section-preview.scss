@@ -71,7 +71,8 @@
         &__pic{
             height:200px;
             width:240px;
-            contain: content;
+            background-size: cover;
+            background-image: url(../images/salas.jpg);
         }
 
         &__social{

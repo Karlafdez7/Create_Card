@@ -35,16 +35,27 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		cursor: pointer;
 		}
 		&--square {
 			width: 30px;
 			height: 30px;
 			border: 1px solid $color__brand3;
 			margin-left: 20px;
+			background-size: cover;
 		}
 }
 
 ::placeholder {
 	color: #c5c5c5;
 	font-size: 1.4rem;
+}
+.form__photoinput {
+	display: none;
+}
+
+.error-span {
+	font-family: $font__text;
+	font-size: 14px;
+	color: red;
 }

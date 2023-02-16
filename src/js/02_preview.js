@@ -17,50 +17,8 @@ const allInputList = document.querySelectorAll('.js-input');
 
 function handleInputForm(event) {
   data[event.target.id] = event.target.value;
-  /* data.name = inputName.value;
-  data.job = inputJob.value;
-  data.email = inputEmail.value;
-  data.phone = inputTel.value;
-  data.linkedin = inputLinkedin.value;
-  data.github = inputGithub.value; */
   updatePreview();
 }
-/* let nameWritten = '';
-let emailWritten = '';
-let jobWritten = '';
-let telWritten = '';
-let linkedinWritten = '';
-let githubWritten = ''; */
-
-/* function handleInputName () {
-  data.name = inputName.value;
-  updatePreview();
-}
-
-function handleInputJob () {
-  data.job = inputJob.value;
-  updatePreview();
-}
-
-function handleInputEmail () {
-  data.email = inputEmail.value;
-  updatePreview();
-}
-
-function handleInputTel () {
-  data.phone = inputTel.value;
-  updatePreview();
-}
-
-function handleInputLinkedin () {
-  data.linkedin = inputLinkedin.value;
-  updatePreview();
-}
-
-function handleInputGithub () {
-  data.github = inputGithub.value;
-  updatePreview();
-} */
 
 function updatePreview() {
   if (data.name === '') {
@@ -90,7 +48,17 @@ function updatePreview() {
 
 // FUNCIONES -PALETTES
 
-function handlePalette1() {
+function handlePalettes(event) {
+  const num = parseInt(event.target.id);
+  data.palette = num;
+  previewPalette.classList.remove('palette1');
+  previewPalette.classList.remove('palette2');
+  previewPalette.classList.remove('palette3');
+  previewPalette.classList.add(`palette${num}`);
+}
+
+
+/* function handlePalette1() {
   data.palette = 1;
   previewPalette.classList.remove('palette2');
   previewPalette.classList.remove('palette3');
@@ -121,7 +89,7 @@ function handlePalettes(event) {
   if(event.target.id === 'palette3') {
     handlePalette3();
   }
-}
+} */
 
 
 inputEmail.addEventListener('change', function () {
@@ -188,14 +156,7 @@ for(let i = 0; i < allInputList.length; i++) {
   allInputList[i].addEventListener('input', handleInputForm);
 }
 
-/* inputName.addEventListener('input', handleInputName);
-inputJob.addEventListener('input', handleInputJob);
-inputEmail.addEventListener('input', handleInputEmail);
-inputTel.addEventListener('input', handleInputTel);
-inputLinkedin.addEventListener('input', handleInputLinkedin);
-inputGithub.addEventListener('input', handleInputGithub); */
-
-/* btnPalette1.addEventListener('click', handlePalette1); 
-btnPalette2.addEventListener('click', handlePalette2);
-btnPalette3.addEventListener('click', handlePalette3); */
-btnPalettes.addEventListener('click', handlePalettes);
+/* btnPalettes.addEventListener('click', handlePalettes); */
+btnPalette1.addEventListener('click', handlePalettes);
+btnPalette2.addEventListener('click', handlePalettes);
+btnPalette3.addEventListener('click', handlePalettes);
