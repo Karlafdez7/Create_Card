@@ -16,7 +16,13 @@ const data = {
 const allInputList = document.querySelectorAll('.js-input');
 
 function handleInputForm() {
-  
+  data.name = inputName.value;
+  data.job = inputJob.value;
+  data.email = inputEmail.value;
+  data.phone = inputTel.value;
+  data.linkedin = inputLinkedin.value;
+  data.github = inputGithub.value;
+  updatePreview();
 }
 /* let nameWritten = '';
 let emailWritten = '';
@@ -25,7 +31,7 @@ let telWritten = '';
 let linkedinWritten = '';
 let githubWritten = ''; */
 
-function handleInputName () {
+/* function handleInputName () {
   data.name = inputName.value;
   updatePreview();
 }
@@ -53,7 +59,7 @@ function handleInputLinkedin () {
 function handleInputGithub () {
   data.github = inputGithub.value;
   updatePreview();
-}
+} */
 
 function updatePreview() {
   if (data.name === '') {
