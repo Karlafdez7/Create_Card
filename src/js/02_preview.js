@@ -15,13 +15,14 @@ const data = {
 
 const allInputList = document.querySelectorAll('.js-input');
 
-function handleInputForm() {
-  data.name = inputName.value;
+function handleInputForm(event) {
+  data[event.target.id] = event.target.value;
+  /* data.name = inputName.value;
   data.job = inputJob.value;
   data.email = inputEmail.value;
   data.phone = inputTel.value;
   data.linkedin = inputLinkedin.value;
-  data.github = inputGithub.value;
+  data.github = inputGithub.value; */
   updatePreview();
 }
 /* let nameWritten = '';
