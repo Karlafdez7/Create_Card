@@ -1,3 +1,4 @@
+
 .section__fill {
 	display: flex;
 	flex-direction: column;
@@ -54,8 +55,9 @@
 	display: none;
 }
 
-.error-span {
+
+.error {
+	color: $--rusty-red;
+	font-size: 1.4rem;
 	font-family: $font__text;
-	font-size: 14px;
-	color: red;
 }
