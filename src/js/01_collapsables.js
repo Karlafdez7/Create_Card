@@ -38,6 +38,6 @@
     openShareSection();
  };
  
- designLegend.addEventListener ('click', handleClickDesign );
- fillLegend.addEventListener ('click', handleClickFill );
-shareLegend.addEventListener ('click', handleClickShare );
+designLegend.addEventListener ('click', handleClickDesign);
+fillLegend.addEventListener ('click', handleClickFill);
+shareLegend.addEventListener ('click', handleClickShare);

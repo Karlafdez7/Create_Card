@@ -7,15 +7,18 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 15vh;
+     height: 15vh;   
     
-    @media all and (min-width: $breakpoint-tablet) {
-        height: 5vh;
+    @media (min-width: $breakpoint-tablet) {
+        height: 6vh; 
         flex-direction: row;
         justify-content:space-between;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
+        @media (min-width:$breakpoint-desktop) {
+            height: 6vh;
+        }
 
 
     &__copy {

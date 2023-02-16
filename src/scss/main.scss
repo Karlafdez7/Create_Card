@@ -15,6 +15,7 @@
 @import 'layout/footer';
 @import 'pages/footer-UI';
 
-// body {
-//     height: 100vh;
-// }
+body {
+    display: flex;
+    flex-direction: column;
+}
