@@ -13,6 +13,11 @@ const data = {
   photo: "",
 };
 
+const allInputList = document.querySelectorAll('.js-input');
+
+function handleInputForm() {
+  
+}
 /* let nameWritten = '';
 let emailWritten = '';
 let jobWritten = '';
@@ -172,13 +177,16 @@ inputGithub.addEventListener('change', function () {
 
 
 // EVENTOS
+for(let i = 0; i < allInputList.length; i++) {
+  allInputList[i].addEventListener('input', handleInputForm);
+}
 
-inputName.addEventListener('input', handleInputName);
+/* inputName.addEventListener('input', handleInputName);
 inputJob.addEventListener('input', handleInputJob);
 inputEmail.addEventListener('input', handleInputEmail);
 inputTel.addEventListener('input', handleInputTel);
 inputLinkedin.addEventListener('input', handleInputLinkedin);
-inputGithub.addEventListener('input', handleInputGithub);
+inputGithub.addEventListener('input', handleInputGithub); */
 
 /* btnPalette1.addEventListener('click', handlePalette1); 
 btnPalette2.addEventListener('click', handlePalette2);
