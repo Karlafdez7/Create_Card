@@ -13,7 +13,7 @@ const data = {
   photo: "",
 };
 
-const allInputList = document.querySelectorAll('.js-input');
+let allInputList = document.querySelectorAll('.js-input');
 
 function handleInputForm(event) {
   data[event.target.id] = event.target.value;
@@ -161,8 +161,6 @@ function checkSizeName(){
 
 
 
-
-// EVENTOS
 for(let i = 0; i < allInputList.length; i++) {
   allInputList[i].addEventListener('input', handleInputForm);
 }

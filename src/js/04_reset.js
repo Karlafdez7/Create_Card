@@ -15,6 +15,9 @@ const handleReset = () => {
   previewPalette.classList.remove('palette3');
   previewPalette.classList.add('palette1');
   btnPalette1.checked = true;
+  for(let i = 0; i < allInputList.length; i++) {
+  allInputList[i].value = "";
+  };
   resetImage();
 }
 
