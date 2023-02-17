@@ -14,6 +14,7 @@ const data = {
 };
 
 let allInputList = document.querySelectorAll('.js-input');
+let allInputErrorList= document.querySelectorAll('.js-msgerror');
 
 function handleInputForm(event) {
   data[event.target.id] = event.target.value;
@@ -107,6 +108,31 @@ inputEmail.addEventListener('change', function () {
   }
 });
 
+inputTel.addEventListener('change', function () {
+  showErrorTel(); 
+});
+
+/* VALIDACIÓN TELF ---- DEBERES....*/
+
+const telef =  new RegExp("^(\\+34|0034|34)?[6789]\\d{8}$");
+
+    
+function showErrorTel() {
+  console.log('hola'); 
+  if(inputTel.value === '') {
+    // Si el campo está vacío
+    // muestra el mensaje de error siguiente.
+    telError.textContent = 'Debe introducir un número de teléfono válido.';
+  } else if(telef.test(inputTel.value)) {
+    // Si el campo no contiene una dirección de correo electrónico
+    // muestra el mensaje de error siguiente.
+    telError.textContent = 'El valor introducido debe ser un número de teléfono válido.';
+  } else {
+    telError.innerHTML = '';
+  }
+}
+
+
 function showError() {
   if(email.validity.valueMissing) {
     // Si el campo está vacío
@@ -121,12 +147,14 @@ function showError() {
   }
 }
 
-inputName.addEventListener('change', function () {
+inputName.addEventListener('keyup', function () {
+  checkSizeName();
   if (inputName.value === "") {
     nameError.innerHTML = 'Rellena tus datos'; 
     nameError.className = 'error'; 
+  } else {
+    nameError.innerHTML = ''; 
   }
-  checkSizeName();
 });
 
 inputJob.addEventListener('change', function () {
@@ -153,9 +181,11 @@ inputGithub.addEventListener('change', function () {
 
 
 function checkSizeName(){
-  if (inputName.length > 6) {
-    previewName.classList.remove(preview__card__name);
-    previewName.classList.add(preview__card__name__small);
+    if (inputName.value.length > 20) {
+    console.log('Hola')
+    previewName.classList.remove('preview__card__name');
+    previewName.classList.add('preview__card__name__small');
+   
   }
 };
 

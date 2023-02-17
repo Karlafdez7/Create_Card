@@ -2,6 +2,7 @@
 // Botón reset
 
 const handleReset = () => {
+  console.log(allInputErrorList); 
   data.palette = 1,
   data.name = "",
   data.job = "",
@@ -18,6 +19,10 @@ const handleReset = () => {
   for(let i = 0; i < allInputList.length; i++) {
   allInputList[i].value = "";
   };
+  for(let i = 0; i < allInputErrorList.length; i++) {
+    allInputErrorList[i].innerHTML = " ";
+    };
+  
   resetImage();
 }
 
