@@ -1,6 +1,6 @@
 /* eslint-disable strict */
 // Botón reset
-
+let allInputErrorList= document.querySelectorAll('.js-msgerror');
 const handleReset = () => {
   console.log(allInputErrorList); 
   data.palette = 1,
@@ -17,11 +17,11 @@ const handleReset = () => {
   previewPalette.classList.add('palette1');
   btnPalette1.checked = true;
   for(let i = 0; i < allInputList.length; i++) {
-  allInputList[i].value = "";
+    allInputList[i].value = "";
   };
   for(let i = 0; i < allInputErrorList.length; i++) {
     allInputErrorList[i].innerHTML = " ";
-    };
+  };
   
   resetImage();
 }

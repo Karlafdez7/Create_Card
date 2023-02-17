@@ -14,7 +14,6 @@ const data = {
 };
 
 let allInputList = document.querySelectorAll('.js-input');
-let allInputErrorList= document.querySelectorAll('.js-msgerror');
 
 function handleInputForm(event) {
   data[event.target.id] = event.target.value;
@@ -118,7 +117,6 @@ const telef =  new RegExp("^(\\+34|0034|34)?[6789]\\d{8}$");
 
     
 function showErrorTel() {
-  console.log('hola'); 
   if(inputTel.value === '') {
     // Si el campo está vacío
     // muestra el mensaje de error siguiente.
