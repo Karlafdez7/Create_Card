@@ -126,6 +126,7 @@ inputName.addEventListener('change', function () {
     nameError.innerHTML = 'Rellena tus datos'; 
     nameError.className = 'error'; 
   }
+  checkSizeName();
 });
 
 inputJob.addEventListener('change', function () {
@@ -133,6 +134,7 @@ inputJob.addEventListener('change', function () {
     jobError.innerHTML = 'Rellena tus datos'; 
     jobError.className = 'error'; 
   }
+
 });
 
 inputLinkedin.addEventListener('change', function () {
@@ -148,6 +150,15 @@ inputGithub.addEventListener('change', function () {
     githubError.className = 'error'; 
   }
 });
+
+
+function checkSizeName(){
+  if (inputName.length > 6) {
+    previewName.classList.remove(preview__card__name);
+    previewName.classList.add(preview__card__name__small);
+  }
+};
+
 
 
 
