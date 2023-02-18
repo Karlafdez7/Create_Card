@@ -13,6 +13,8 @@ const data = {
   photo: "",
 };
 
+
+
 let allInputList = document.querySelectorAll('.js-input');
 
 function handleInputForm(event) {
@@ -91,6 +93,7 @@ function handlePalettes(event) {
   }
 } */
 
+const telef =  /^\d{7,14}$/ ;
 
 inputEmail.addEventListener('change', function () {
   // Cada vez que el usuario escribe algo, verificamos si
@@ -111,25 +114,20 @@ inputTel.addEventListener('change', function () {
   showErrorTel(); 
 });
 
-/* VALIDACIÓN TELF ---- DEBERES....*/
+/* VALIDACIÓN TELF */
 
-const telef =  new RegExp("^(\\+34|0034|34)?[6789]\\d{8}$");
-
-    
 function showErrorTel() {
+  console.log('hola');
   if(inputTel.value === '') {
-    // Si el campo está vacío
-    // muestra el mensaje de error siguiente.
+    // Si el campo está vacío muestra el mensaje de error. 
     telError.textContent = 'Debe introducir un número de teléfono válido.';
   } else if(telef.test(inputTel.value)) {
-    // Si el campo no contiene una dirección de correo electrónico
-    // muestra el mensaje de error siguiente.
-    telError.textContent = 'El valor introducido debe ser un número de teléfono válido.';
-  } else {
     telError.innerHTML = '';
+  } else {
+      // Si el campo no contiene de 7 a 14 número muestra el mensaje de error. 
+    telError.textContent = 'El valor introducido debe ser un número de teléfono válido.';
   }
 }
-
 
 function showError() {
   if(email.validity.valueMissing) {
@@ -180,7 +178,6 @@ inputGithub.addEventListener('change', function () {
 
 function checkSizeName(){
     if (inputName.value.length > 20) {
-    console.log('Hola')
     previewName.classList.remove('preview__card__name');
     previewName.classList.add('preview__card__name__small');
    
