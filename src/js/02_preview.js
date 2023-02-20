@@ -93,7 +93,7 @@ function handlePalettes(event) {
   }
 } */
 
-const telef =  /^\d{7,14}$/ ;
+const telef =  /^\+?(\d.*){3,}$/ ;
 
 inputEmail.addEventListener('change', function () {
   // Cada vez que el usuario escribe algo, verificamos si
