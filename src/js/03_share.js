@@ -16,19 +16,19 @@ function handleClickSend(event) {
         },
         body:JSON.stringify(data),
       })
-        .then ((response)=>response.json())
-        .then ((data)=>{
+    .then ((response)=>response.json())
+    .then ((data)=>{
 
-            console.log (data);
-            if( ! data.success){
-            // Mensaje error
-            console.log ('maaaaaaaaaaaaaaaal');
-            msgShare.innerHTML = 'Por favor, rellena tus datos '; 
-            }else{
-            // enlace de la tarjeta
-            msgShare.innerHTML = data.cardURL;
-            console.log ('TARJETA'); 
-            }
+      console.log (data);
+      if( ! data.success){
+        // Mensaje error
+        console.log ('maaaaaaaaaaaaaaaal');
+        msgShare.innerHTML = data.error; 
+      }else{
+        // enlace de la tarjeta
+        msgShare.innerHTML = data.cardURL;
+        console.log ('TARJETA'); 
+}
 } ); 
 }
 
