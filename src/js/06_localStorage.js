@@ -9,8 +9,9 @@ if(localStorageData){
     inputJob.value=data.job; 
     inputEmail.value=data.email;
     inputTel.value=data.phone;
-    inputLinkedin=data.linkedin;
-    inputGithub=data.github; 
+    data.photo=data.photo; 
+    //inputLinkedin=data.linkedin;
+    //inputGithub=data.github; 
     updatePreview(); 
 }
 
