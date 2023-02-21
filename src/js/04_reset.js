@@ -23,7 +23,9 @@ const handleReset = () => {
     allInputErrorList[i].innerHTML = " ";
   };
   
+  localStorage.removeItem('formData'); 
   resetImage();
+
 }
 
 btnReset.addEventListener('click', handleReset);

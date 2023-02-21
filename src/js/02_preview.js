@@ -2,7 +2,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable strict */
 
-const data = {
+let data = {
   palette: 1,
   name: "",
   job: "",
@@ -14,15 +14,16 @@ const data = {
 };
 
 
-
 let allInputList = document.querySelectorAll('.js-input');
 
 function handleInputForm(event) {
   data[event.target.id] = event.target.value;
+  localStorage.setItem('formData', JSON.stringify(data)); 
   updatePreview();
 }
 
 function updatePreview() {
+  console.log('entra en update Preview')
   if (data.name === '') {
     previewName.innerHTML = 'Nombre Apellidos';
   } else {
