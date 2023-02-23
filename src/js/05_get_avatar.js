@@ -34,12 +34,14 @@ function writeImage() {
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
   data.photo = fr.result;
+  localStorage.setItem('formData', JSON.stringify(data)); 
 }
 
 function resetImage() {
   profileImage.style.backgroundImage = `url(./assets/images/salas.jpg)`;
   profilePreview.style.backgroundImage = `url()`;
 }
+
 
 /**
  * Añadimos los listeners necesarios:

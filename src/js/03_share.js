@@ -22,12 +22,10 @@ function handleClickSend(event) {
       console.log (data);
       if( ! data.success){
         // Mensaje error
-        console.log ('maaaaaaaaaaaaaaaal');
         msgShare.innerHTML = data.error; 
       }else{
         // enlace de la tarjeta
-        msgShare.innerHTML = data.cardURL;
-        console.log ('TARJETA'); 
+        msgShare.innerHTML = `<a href='${data.cardURL}' target='_blank'> Tu tarjeta </a>`;
 }
 } ); 
 }

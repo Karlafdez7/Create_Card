@@ -9,10 +9,12 @@ if(localStorageData){
   inputJob.value = data.job;
   inputEmail.value = data.email;
   inputTel.value = data.phone;
-  data.photo = data.photo;
+  profileImage.style.backgroundImage = `url(${data.photo})`; 
+  profilePreview.style.backgroundImage = `url(${data.photo})`;
   inputLinkedin.value = data.linkedin;
   inputGithub.value = data.github;
   updatePreview();
+  checkSizeName(); 
 }
 
 
