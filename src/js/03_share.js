@@ -19,7 +19,6 @@ function handleClickSend(event) {
     .then ((response)=>response.json())
     .then ((data)=>{
 
-      console.log (data);
       if( ! data.success){
         // Mensaje error
         if(data.error.startsWith('Mandatory fields')){

@@ -2,7 +2,6 @@
 // Botón reset
 let allInputErrorList= document.querySelectorAll('.js-msgerror');
 const handleReset = () => {
-  console.log(allInputErrorList); 
   data.palette = 1,
   data.name = "",
   data.job = "",

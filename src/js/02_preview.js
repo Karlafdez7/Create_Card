@@ -23,7 +23,6 @@ function handleInputForm(event) {
 }
 
 function updatePreview() {
-  console.log('entra en update Preview')
   if (data.name === '') {
     previewName.innerHTML = 'Nombre Apellidos';
   } else {
