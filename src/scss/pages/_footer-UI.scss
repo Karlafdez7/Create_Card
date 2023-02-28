@@ -1,26 +1,30 @@
 .footer-ui {
-    background-color: #ffffff;
-    border: solid 1px $color__dividers;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    position: sticky;
-    bottom: 0px;
-    width: 100vw;
+   height: 100vh;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   align-items: flex-end;
     
-   
+    .container-footer {
+        background-color: #ffffff;
+        border: solid 1px $color__dividers;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+
     
     @media all and (min-width: $breakpoint-tablet) {
         flex-direction: row;
         justify-content:space-between;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
-        position: fixed;
+        position: absolute;
         bottom: 0;
-width: 100vw;
+        width: 100vw;
     }
 
 
@@ -37,4 +41,5 @@ width: 100vw;
         width: 103px;
         height: 40px;
     }
+}
 }

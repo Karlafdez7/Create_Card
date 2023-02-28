@@ -20,6 +20,13 @@ html{
             border: 0;
             text-transform: uppercase;
             margin: 0rem auto 3rem;
+            cursor: pointer;
+
+    }
+
+    :active {
+        color: white;
+        background-color:#d5d5d5 ;
     }
 }
 
