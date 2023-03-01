@@ -17,15 +17,15 @@ const handleReset = () => {
   btnPalette1.checked = true;
   msgShare.innerHTML = "";
   for(let i = 0; i < allInputList.length; i++) {
-    allInputList[i].value = "";
+    allInputList[i].value = '';
   };
   for(let i = 0; i < allInputErrorList.length; i++) {
-    allInputErrorList[i].innerHTML = " ";
+    allInputErrorList[i].innerHTML = '';
   };
-  
-  localStorage.removeItem('formData'); 
-  resetImage();
 
+  localStorage.removeItem('formData');
+  resetImage();
+  sendBTN.classList.remove('checked');
 }
 
 btnReset.addEventListener('click', handleReset);

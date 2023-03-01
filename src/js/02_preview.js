@@ -124,7 +124,7 @@ function showErrorTel() {
   } else if(telef.test(inputTel.value)) {
     telError.innerHTML = '';
   } else {
-      // Si el campo no contiene de 7 a 14 número muestra el mensaje de error. 
+    // Si el campo no contiene de 7 a 14 número muestra el mensaje de error. 
     telError.textContent = 'El valor introducido debe ser un número de teléfono válido.';
   }
 }
@@ -146,43 +146,41 @@ function showError() {
 inputName.addEventListener('keyup', function () {
   checkSizeName();
   if (inputName.value === "") {
-    nameError.innerHTML = 'Rellena tus datos'; 
-    nameError.className = 'error'; 
+    nameError.innerHTML = 'Rellena tus datos';
+    nameError.className = 'error';
   } else {
-    nameError.innerHTML = ''; 
+    nameError.innerHTML = '';
   }
 });
 
 inputJob.addEventListener('change', function () {
   if (inputJob.value === "") {
-    jobError.innerHTML = 'Rellena tus datos'; 
-    jobError.className = 'error'; 
+    jobError.innerHTML = 'Rellena tus datos';
+    jobError.className = 'error';
   }
-
 });
 
 inputLinkedin.addEventListener('change', function () {
   if (inputLinkedin.value === "") {
-    linkedinError.innerHTML = 'Rellena tus datos'; 
-    linkedinError.className = 'error'; 
+    linkedinError.innerHTML = 'Rellena tus datos';
+    linkedinError.className = 'error';
   }
 });
 
 inputGithub.addEventListener('change', function () {
   if (inputGithub.value === "") {
-    githubError.innerHTML = 'Rellena tus datos'; 
-    githubError.className = 'error'; 
+    githubError.innerHTML = 'Rellena tus datos';
+    githubError.className = 'error';
   }
 });
 
 
 function checkSizeName(){
-    if (inputName.value.length > 20) {
+  if (inputName.value.length > 20) {
     previewName.classList.remove('preview__card__name');
     previewName.classList.add('preview__card__name__small');
-   
   }
-};
+}
 
 
 
