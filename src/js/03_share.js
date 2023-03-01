@@ -37,8 +37,8 @@ function handleClickSend(event) {
         	<a class="share_card_twitter-share-button" href="https://twitter.com/intent/tweet?text=Mi%20tarjeta%20de%20presentaci%C3%B3n&url=${data.cardURL}"target='_blank' ><i class="fa-brands fa-twitter"></i> Compartir en Twitter</a>
             </div>`;
         sendBTN.classList.add('checked');
-}
-} );
+      }
+    } );
 }
 
 sendBTN.addEventListener( 'click', handleClickSend); 
