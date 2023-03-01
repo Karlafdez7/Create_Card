@@ -106,12 +106,8 @@ inputEmail.addEventListener('change', function () {
     emailError.className = 'error'; // Restablece el estado visual del mensaje
   } else {
     // Si todavía hay un error, muestra el error exacto
-    showError(); 
+    showError();
   }
-});
-
-inputTel.addEventListener('change', function () {
-  showErrorTel(); 
 });
 
 /* VALIDACIÓN TELF */
@@ -143,6 +139,10 @@ function showError() {
   }
 }
 
+inputTel.addEventListener('change', function () {
+  showErrorTel();
+});
+
 inputName.addEventListener('keyup', function () {
   checkSizeName();
   if (inputName.value === "") {
@@ -157,6 +157,8 @@ inputJob.addEventListener('change', function () {
   if (inputJob.value === "") {
     jobError.innerHTML = 'Rellena tus datos';
     jobError.className = 'error';
+  } else {
+    jobError.innerHTML = '';
   }
 });
 
@@ -164,6 +166,8 @@ inputLinkedin.addEventListener('change', function () {
   if (inputLinkedin.value === "") {
     linkedinError.innerHTML = 'Rellena tus datos';
     linkedinError.className = 'error';
+  } else {
+    linkedinError.innerHTML = '';
   }
 });
 
@@ -171,6 +175,8 @@ inputGithub.addEventListener('change', function () {
   if (inputGithub.value === "") {
     githubError.innerHTML = 'Rellena tus datos';
     githubError.className = 'error';
+  } else {
+    githubError.innerHTML = '';
   }
 });
 
