@@ -31,16 +31,16 @@ It is important to note that the `public/` and `docs/` folders are automatically
     
 **The business card must have the following fields** 
 
-- Full name (full_name)
-- Profession (job)
+- Full name
+- Profession
 
 Personal information
-- Phone (phone)
-- Email (email)
+- Phone 
+- Email 
 
 Social media
-- LinkedIn (linkedin)
-- GitHub (github)
+- LinkedIn 
+- GitHub 
 
 **Regarding the interaction with the web:**
 
