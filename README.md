@@ -1,33 +1,72 @@
-# Awesome profile-cards - Grupo 8:
+# Awesome profile-cards
 
-El proyecto consiste en crear una una aplicación web que nos permite crear una tarjeta de visita personalizada. En la página web podemos introducir nuestros datos profesionales y obtener una vista maquetada con esta información
+The project consists of creating a web application that allows us to create a personalized business card. On the website, we can enter our professional data and obtain a formatted view with this information.
 
-Se ha utilizado el _Adalab Web Starter Kit_ (AWSK), que incluye un motor de plantillas HTML, preprocesador SASS y un servidor local. Se necesita instalar Node JS para trabajar con el proyecto.
+The Adalab Web Starter Kit (AWSK) has been used, which includes an HTML template engine, SASS preprocessor, and a local server. Node JS needs to be installed to work with the project.
 
-Es importante comentar que las carpetas `public/` y `docs/`, son generadas automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/`, los procesa y los genera dentro de `public/` y `docs/`.
+It is important to note that the `public/` and `docs/` folders are automatically generated when the project is started. The Kit reads the files inside `src/`, processes them, and generates them inside `public/` and `docs/`.
 
-### Tecnologías utilizadas:
+### Technologies used:
 
-- Uso avanzado de formularios HTML.
-- Maquetación usando CSS avanzado, como flex y grid.
-- Uso de mediaqueries para que el diseño sea adaptable al dispositivo usando la estrategia mobile first.
-- Gestión de eventos en el navegador.
-- Acceso y envío de datos a un servidor.
-- Almacenamiento en local usando LocalStorage.
-- Uso de git para el control de versiones del proyecto.
-- Publicación del resultado en Internet usando GitHub Pages.
-- Uso de API.
+- Advanced use of HTML forms.
+- Layout using advanced CSS such as flex and grid.
+- Use of media queries to make the design adaptable to the device using the mobile-first strategy.
+- Handling events in the browser.
+- Accessing and sending data to a server.
+- Local storage using LocalStorage.
+- Using Git for project version control.
+- Publishing the result on the Internet using GitHub Pages.
+- Use of APIs.
 
-### Detalles de la web:
+### Website details:
 
-- Una página landing de bienvenida.
-- Una página para la aplicación de crear tarjetas que permita al usuario:
+- A welcome landing page.
+- A page for the card-making application that allows the user to:
 
-  1. Elegir el estilo de la tarjeta, eligiendo además una paleta de colores.
+    1. Choose the card style, and also choose a color palette.
 
-  2. Mediante la introducción de información en un formulario, este texto se muestre maquetado automáticamente en un cuadro similar a una tarjeta de visita, que será la muestra del resultado finalizado.
+    2. By entering information into a form, the text is automatically formatted and displayed in a box similar to a business card, which will be the preview of the final result.
 
-  3. Que el usuario pueda crear una web con su tarjeta y compartirla por Twitter.
+    3. Allow the user to create a website with their card and share it on Twitter.
+    
+**The business card must have the following fields** 
+
+- Full name (full_name)
+- Profession (job)
+
+Personal information
+- Phone (phone)
+- Email (email)
+
+Social media
+- LinkedIn (linkedin)
+- GitHub (github)
+
+**Regarding the interaction with the web:**
+
+- The fields must have restrictions for their indicated format. Phone field for mobile, email for email, etc.
+- The modifications we make in the form (design and content), appear automatically in the preview of the card.
+- The 3 parts of the creation process will be collapsible elements, which, when clicking on the title, will show/hide, only displaying one section at a time.
+- All the information from the form must be stored in LocalStorage (browser local storage), so that when reloading the page it is still available and we can delete it with a Reset button. For this, we must define a complex data structure (with arrays and objects) that is what we will store in the browser.
+
+### I leave you some images of the project
+
+
+<div align="center">
+<p> Fully responsive website:
+</p>
+<img width="25%" height="35%" src="https://github.com/Karlafdez7/Create_Card/blob/main/src/images/Landing-mobil_README.png?raw=true" alt="cover" />
+</br>
+<img width="45%" height="55%" src="https://github.com/Karlafdez7/Create_Card/blob/main/src/images/Landing-tablet_README.png?raw=true" alt="cover" />
+</br>
+<img width="25%" height="35%" src="https://github.com/Karlafdez7/Create_Card/blob/main/src/images/Mobil_README.png?raw=true" alt="cover" />
+</div>
+</br>
+</div>
+<div align="center">
+<img width="45%" height="55%" src="https://github.com/Karlafdez7/Create_Card/blob/main/src/images/Tablet-desktop_README.png?raw=true" alt="cover" />
+</div>
+
 
 ### Feedback:
 
